@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <p align="center">
+        <font size="24" >
+            {{ name }} приветствую Вас!<br>
+        </font>
+    </p>
+<form class="form-control" action="/logout" method=post>
+  <fieldset class="form-control">
+    <legend>Если это не вы нажмите выйти</legend>
+
+    <input type="submit" value="Выйти">
+  </fieldset>
+</form>
+<form class="form-control" action="/home" method=post>
+  <fieldset class="form-control">
+    <legend>Иначе - продолжить</legend>
+    <input type="submit" value="Продолжить">
+  </fieldset>
+</form>
+</body>
+</html>
